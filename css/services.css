@@ -1,0 +1,101 @@
+/* Electronic Services Styles */
+.electronic-services {
+  background-color: #f8fafc;
+}
+
+.section-title {
+  color: #3A506B;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 80px;
+  height: 3px;
+  background: #5BC0BE;
+}
+
+.section-title-2{
+   color: #3A506B;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+.section-title-2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  transform: translateX(50%);
+  width: 80px;
+  height: 3px;
+  background: #5BC0BE;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(91, 192, 190, 0.2);
+}
+
+.card-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #5BC0BE, #3A506B);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.75rem;
+}
+
+.card-title {
+  color: #3A506B;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-card {
+    padding: 20px;
+  }
+  
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+ .btn {
+  background-color: #5BC0BE;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ .btn:hover {
+  background-color: #3A506B;
+  transform: translateY(-2px);
+}

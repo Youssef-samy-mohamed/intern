@@ -1,0 +1,22 @@
+/* General page background and font */
+body {
+  background-color: #f4f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 0; /* Remove default padding since navbar starts hidden */
+}
+
+:root {
+  --color-primary: #5BC0BE;
+  --color-primary-dark: #3A506B;
+  --color-text-secondary: #6c757d;
+  --color-white: #ffffff;
+
+  --gradient-brand: linear-gradient(135deg, #5BC0BE, #3A506B);
+  --gradient-overlay-light: linear-gradient(135deg, rgba(91, 192, 190, 0.1), rgba(58, 80, 107, 0.1));
+
+  --radius-large: 20px;
+  --radius-pill: 50px;
+
+  --shadow-soft: 0 4px 12px rgba(0,0,0,0.15);
+  --box-shadow: 0 15px 40px rgba(91, 192, 190, 0.4);
+}

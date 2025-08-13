@@ -1,0 +1,40 @@
+.partners-section {
+  background: linear-gradient(135deg, #5BC0BE, #3A506B);
+  color: white;
+  padding: 3rem 0;
+}
+
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+  }
+
+  .slide {
+    flex: 0 0 auto;
+    margin-right: 1.5rem;
+  }
+
+  .slide img {
+    width: 150px;
+    border-radius: 12px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .slide img:hover {
+    transform: scale(1.08);
+  }
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }

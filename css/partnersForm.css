@@ -1,0 +1,132 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 0; /* No padding because navbar is fixed */
+  background-color: #f4f7fa;
+}
+
+/* Hero Section */
+.partners-hero {
+  position: relative;
+  background: linear-gradient(
+      rgba(58, 80, 107, 0.75),
+      rgba(91, 192, 190, 0.75)
+    ),
+    url('../assets/images/partners-hero.jpg') center/cover no-repeat;
+  padding: 7rem 0;
+  color: #fff;
+  overflow: hidden;
+  animation: heroZoom 10s ease-in-out forwards;
+}
+
+@keyframes heroZoom {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 105%;
+  }
+}
+
+.partners-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.partners-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Breadcrumbs */
+.breadcrumb-container {
+  margin-top: 1rem;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+  color: #f1f1f1;
+}
+
+.breadcrumb-item.active {
+  color: #e0e0e0;
+}
+
+/* Form Card */
+.form-card {
+  background: #fff;
+  border-radius: 15px;
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .form-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+} */
+
+.form-label {
+  font-weight: 600;
+  color: #3A506B;
+}
+
+.form-control,
+.form-select,
+textarea {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+  border-color: #5BC0BE;
+  box-shadow: 0 0 0 0.2rem rgba(91, 192, 190, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #5BC0BE, #3A506B);
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f4f7fa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+}

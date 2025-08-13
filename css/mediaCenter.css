@@ -1,0 +1,42 @@
+/* Media Center Section */
+.media-center-section .card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-center-section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(91, 192, 190, 0.2);
+}
+
+/* Keep image fixed size */
+.media-center-section .card img {
+  object-fit: cover;
+  height: 220px;
+}
+
+/* Title & text styling */
+.media-center-section .card-title {
+  color: #3A506B;
+}
+
+.media-center-section .card-text {
+  color: #6c757d;
+}
+
+/* Buttons matching global theme */
+.media-center-section .btn-primary {
+  background-color: #5BC0BE;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.media-center-section .btn-primary:hover {
+  background-color: #3A506B;
+  transform: translateY(-2px);
+}
